@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HelloController;
+use App\Http\Controllers\SingleActionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,5 +20,5 @@ Route::get('/', function () {
 });
 
 Route::get('/hello', [HelloController::class, 'index']);
-Route::get('/hello/other', [HelloController::class, 'other']);
 
+Route::get('/single_action', SingleActionController::class);
